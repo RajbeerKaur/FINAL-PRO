@@ -281,6 +281,61 @@ img{
     width: 2px;
     background-color: rgb(126, 133, 126);
 }
+/* --------ABOUT SECTION--------*/
+.about_description{
+    margin-bottom: 2rem;
+}
+.about_data-card {
+    display: flex;
+    column-gap: 1rem;
+    margin-bottom: 4rem;
+}
+.about_card {
+    background-color:rgb(18, 18, 44);
+    border-radius: 25px;
+    padding: 1.2rem;
+    overflow: hidden;
+    position: relative;
+   
+    
+}
+
+.about_card img{
+    border-radius: 15px;
+    margin-bottom:0.5rem;
+   
+}
+.about_card-title{
+    font-size:20px;
+} 
+.about_card-des{
+    font-size:18px;
+}
+.about-card-icon{
+    position: absolute;
+    font-size: 1.5rem;
+    color: var(--body-color);;
+    background-color: rgb(224, 224, 32);
+    right: 0;
+    bottom: 0;
+    padding: .4rem;
+    border-radius: 8px 0 0 0;
+    cursor: pointer;
+    transition: .3s;
+}
+.about-card-icon:hover {
+background-color: var(--first-color-alt);
+}
+.about_img{
+    border-radius: 10px 10px 10px 150px;
+}
+.about_container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+
 /*---large devices*/
 @media  screen and (min-width: 1040px){
     .container{
