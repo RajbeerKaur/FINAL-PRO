@@ -335,7 +335,36 @@ background-color: var(--first-color-alt);
     flex-wrap: wrap;
     gap:2rem;
 }
+/*-----------------Brand Section-----------*/
+.brands_img{
+    width: 70px;
+    opacity: 0.4;
+    transition: 0.3s;
+}
+.brands_container {
+    grid-template-columns: repeat(3, max-content);
+    justify-content: center;
+    align-items: center;
+    gap:4rem ;
+    padding-bottom: 2rem;
+}
+.brands_img:hover{
+    opacity:1;
+}
 
+/*  why doperCars Section */
+.why_container {
+    padding: 1.5rem;
+    background-color:rgb(18, 18, 44);;
+}
+.why_description{
+    font-family: Berliana;
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+}
+.why_container span {
+    color: var(--first-color);
+}
 /*---large devices*/
 @media  screen and (min-width: 1040px){
     .container{
@@ -363,6 +392,16 @@ background-color: var(--first-color-alt);
        
         
     }
+    .about_container{
+      
+        justify-items: center;
+        gap: 0;
+    }
+    .about_data-card{
+        width: 400px;
+    }
+    
+       
     .nav_list{
         display: flex;
         text-align: center;
