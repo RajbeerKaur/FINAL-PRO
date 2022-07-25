@@ -247,7 +247,7 @@ img{
     row-gap: 3.5rem;
 }
 
-.home_title,
+
 .home_value-number{
     color:var(--title-color);
 }
@@ -617,8 +617,10 @@ transform: translateX(15px);
  }
  .app_img{
     
-   width: 70%;
+   width: 80%;
     position: relative;
+    border-radius: 20px;
+
     
 
  }
@@ -664,6 +666,15 @@ transform: translateX(15px);
 .footer_title{
     margin-bottom: 0.6rem;
     font-size: var(--h3-font-size);
+   
+}
+.footer-title{
+color: #3d5b89;
+font-size: 25px;
+}
+.footer-title:hover{
+    color: yellow;
+    font-size: 30px;
 }
 .footer_desc{
     max-width: 250px;
@@ -914,6 +925,7 @@ transform: translateX(5px);
         
     }
     
+    
     .about_data-card{
         width: 300px;
         
@@ -930,9 +942,14 @@ transform: translateX(5px);
     width: 50px;
    }
    .popular_container{
-    width: 875px;
+    width: 275px;
     padding-top: 3rem;
    }
+   .popular-bg{
+  border-radius: 10px;
+    padding-top: 20rem;
+   }
+  
    .popular_card{
     width: 258px;
     margin-bottom: 5rem;
@@ -955,7 +972,7 @@ transform: translateX(5px);
   }
    
   .product_content{
-    grid-template-columns: repeat(3,350px);
+    grid-template-columns: repeat(3,348px);
     gap: 3rem;
   }
   .product_card{
@@ -968,9 +985,12 @@ transform: translateX(5px);
 }
 .app_img{
     position: absolute;
-    right: 25rem;
-    top: 440rem;
-    width: 230px;
+    right: 6rem;
+    top: -10rem;
+    width: 250px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow:3rem white;
 
 }
 .app_data{
@@ -989,6 +1009,83 @@ transform: translateX(5px);
     grid-template-columns: repeat(4,max-content);
     justify-content: space-between;
 
+}
+/*service*/
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, auto));
+    gap:1.5rem;
+   
+}
+
+.services .box-container .box{
+    padding:2rem;
+    border-radius: 2.5rem;
+    box-shadow: var(--box-shadow);
+    border:white;
+    text-align: center;
+    background-color:#182334;
+}
+
+.services .box-container .box i{
+    height:4rem;
+    width:4rem;
+    line-height: 4rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    background:yellow;
+    color:#182334;
+}
+
+.services .box-container .box h3{
+    font-size: 1.2rem;
+    color:white;
+    margin: 1rem 0 0.4rem;
+}
+
+.services .box-container .box p{
+    line-height: 1.8;
+    padding:0.1rem 0;
+    font-size: 00.938rem;
+    color:white;
+}
+
+.services .box-container .box:hover{
+    background :white;
+}
+
+.services .box-container .box:hover h3{
+    color:rgb(14, 13, 13);
+}
+
+.services .box-container .box:hover p{
+    color:rgb(12, 12, 12);
+} 
+ .btn  {
+       color:rgb(8, 8, 8);
+        text-align: center;
+        margin-top: 6px;
+        font-size: 1rem;
+        background-color:yellow ;
+        border-radius: 1.2rem;
+      padding: 7px;
+
+    }
+
+.service .box .fas{
+   padding: 10px;
+   border-radius: 50%; 
+   background-color: #3d5b89;
+   color: rgb(19, 19, 19);
+   font-size: 20px;
+}
+h4{
+    text-align: center;
+    color:white ;
+    font-size: 45px;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 }
