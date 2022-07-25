@@ -120,3 +120,6 @@ sr.reveal(".app_img", {delay:600,origin:"right"});
 sr.reveal(".footer-box", {interval:100});
 sr.reveal(".copyright", {delay:500});
 sr.reveal(".footer_box", {interval:100});
+
+sr.reveal(".box-container");
+sr.reveal(".box", {delay:500,origin:"right"});
