@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    <!----------swiper cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css" integrity="sha512-R+xPS2VPCAFvLRy+I4PgbwkWjw1z5B5gNDYgJN5LfzV4gGNeRQyVrY7Uk59rX+c8tzz63j8DeZPLqmXvBxj8pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <!-----swiper css-------->
     <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
     <link rel ="stylesheet"  href="style1.css" />
@@ -37,28 +41,29 @@
               <a href="#services" class="nav_link">Services</a>
             </li>
             <li class="nav_item" >
+              <a href="#swipers" class="nav_link">Reviews</a>
+            </li>
+            <li class="nav_item" >
               <a href="#products" class="nav_link">Products</a>
             </li>
             <li class="nav_item" >
               <a href="#download" class="nav_link download_link">Download</a>
             </li>
-           </ul>
-
-
+         </ul>
            <div class="nav_close" id="nav-close">
               <i class="ri-close-line"></i>
            </div>
-          </div>
+        
            <div class="nav_toggle" id="nav-toggle">
               <i class="ri-menu-3-line"></i>
            </div>
-         
+        </div> 
        </nav>
     </header>
     
     <!--------- MAIN  SECTION-------->
     <main class="main">
-      <section class="section" id="section">
+      <section class="home" id="home">
         <div class="container home_container grid">
           <div class="home_data">
             <span class=" subtitle home-sub">*Drive Anytime , Anywhere</span>
@@ -79,8 +84,10 @@
             <div class="home_btn">
               <a href="#about" class="home-button">
              Book Now <i class="ri-arrow-right-down-line"></i></a>
+
             </div>
            
+        
             
             <div class="home_value">
               <div>
@@ -111,13 +118,15 @@
       <div class="about_container container grid">
         <div class="about_group">
           <div class="about_data">
-            <span class="subtitle about-sub">ABOUT US</span>
+            <h2 class="subtitle about-sub">ABOUT US</h2>
           <div class="about_heading">
           <h2 class="about_title">
           We Provide The Best  <br> Cars For You.
           </h2>
           <p class="about_description">
             we have a 24/7 customer supports system from
+             <br>everywhere you go.Also,all cars are full insured<br> so you
+             don't have to worry about damages at all.<br> we have a 24/7 customer supports system from
              <br>everywhere you go.Also,all cars are full insured<br> so you
              don't have to worry about damages at all.
           </p>
@@ -143,8 +152,8 @@
     </div>
     </section>
 
-  <!-----Brand------>
-  <section class="brands section">
+  <!-----Brands------>
+  <section class=" section brands"  id="brands">
     <div class="brands_container container grid">
       <div class="brands_content">
         <img src="/assets/image/f.jpg" class="brands_img" />
@@ -201,57 +210,76 @@
             <i class="fas fa-car"></i>
             <h3>car selling</h3>
             <p>Lorem, ipsum dolor sit amet consectetur<br> adipisicing elit. Corporis, nisi.</p>
-            <a href="#" class="btn"> read more</a>
+            <button class="btn">ReadMore</button>   
         </div>
 
         <div class="box">
             <i class="fas fa-tools"></i>
             <h3>parts repair</h3>
             <p>Lorem, ipsum dolor sit amet consectetur<br> adipisicing elit. Corporis, nisi.</p>
-            <a href="#" class="btn"> read more</a>
+            <button class="btn">ReadMore</button>
         </div>
 
         <div class="box">
             <i class="fas fa-car-crash"></i>
             <h3>car insurance</h3>
             <p>Lorem, ipsum dolor sit amet consectetur<br> adipisicing elit. Corporis, nisi.</p>
-            <a href="#" class="btn"> read more</a>
+            <button class="btn">ReadMore</button>
         </div>
 
         <div class="box">
             <i class="fas fa-car-battery"></i>
             <h3>battery replacement</h3>
             <p>Lorem, ipsum dolor sit amet consectetur<br> adipisicing elit. Corporis, nisi.</p>
-            <a href="#" class="btn"> read more</a>
+            <button class="btn">ReadMore</button>    
         </div>
 
         <div class="box">
             <i class="fas fa-gas-pump"></i>
             <h3>oil change</h3>
             <p>Lorem, ipsum dolor sit amet consectetur<br> adipisicing elit. Corporis, nisi.</p>
-            <a href="#" class="btn"> read more</a>
+            <button class="btn">ReadMore</button>
         </div>
 
        <div class="box">
             <i class="fas fa-headset"></i>
             <h3>24/7 support</h3>
             <p>Lorem, ipsum dolor sit amet consectetur<br> adipisicing elit. Corporis, nisi.</p>
-            <a href="#" class="btn"> read more</a>
+            <button class="btn">ReadMore</button>
         </div>
 
     </div>
 
 </section>
 <!-------end==----->
+<!-------slide image-->
+<section class="slider">
+ 
+  <div class="content">
+    <p class="popular_title"> Some top pick cars you'll love</p>
+    <div class="content-carrousel">
+    
+      <figure class="shadow"><img src ="./assets/image/slide1.jpg"></figure>
+      <figure class="shadow"><img src ="/assets/image/slide2.jpg"></figure>
+      <figure class="shadow"><img src ="/assets/image/slide3.jpg"></figure>
+      <figure class="shadow"><img src ="/assets/image/slide4.jpg"></figure>
+      <figure class="shadow"><img src ="/assets/image/slide5.jpg"></figure>
+      <figure class="shadow"><img src ="/assets/image/slide6.jpg"></figure>
+      <figure class="shadow"><img src ="/assets/image/slide7.jpg"></figure>
+      <figure class="shadow"><img src ="/assets/image/slide8.jpg"></figure>
+      <figure class="shadow"><img src ="/assets/image/slide9.jpg"></figure>
+    </div>
+  </div>
+</section>
 
-  <!-------POPULAR-->
+  <!-------POPULAR--
   <section class="section popular" id="popular">
     <img src="/assets/image/pexels-photo.jpeg"  class="popular-bg"/>
   <div class=" container popular_container swiper">
     <h2 class="popular_title">Some top pick cars you'll love</h2>
     <div class="popular_cards swiper-wrapper">
      
-      <!---------car1------------>
+      -------car1------------
       <article class="popular_card swiper-slide " >
         
         <h3 class="car-name">Tesla</h3>
@@ -277,7 +305,7 @@
             <a href="#" class="rent-btn">Rent</a>
           </div>
        </article>
-      <!----------------car2------->
+      ----------------car2-------
       <article class="popular_card swiper-slide">
         <h3 class="car-name">Mercedes Bens</h3>
         <span class="car-model">S63</span>
@@ -302,7 +330,7 @@
             <a href="#" class="rent-btn">Rent</a>
           </div>
        </article>
-      <!-------------car3--------------->
+      <-------------car3---------------
        <article class="popular_card swiper-slide">
         <h3 class="car-name">Lamborghini</h3>
         <span class="car-model">Huracan</span>
@@ -331,7 +359,7 @@
     <div class="swiper-pagination"></div>
  
   </div>
-  </section>
+  </section>-->
   <!-----================NewsLetter=======================-->
 <section class=" section newsletter">
   <div class="container newsletter_container">
@@ -768,7 +796,7 @@
       </div>
   </div>
   </section>
-  <section class="section app" id="app">
+  
     <div class="container app_container grid"> 
    
       <div class="app_img">
@@ -799,16 +827,151 @@
           </div>
         </div>
       </div>
+     
       
+        <section class=" section swipers"  id="swipers">
+          <div class="title-swiper">
+       
+        <h3 class="reviews-pra">Whats Our Customer Say</h3>
+        </div>
+        <!-------swiper-->
+        <div class="swiper mySwiper" id="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="description">
+                  <i class="fa fa-quote-left "></i>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis adipisci totam non sequi itaque optio, odit assumenda ab quia dolore atque expedita dolor</p>
+                </div>
+                <div class="profile">
+                  <img src="/assets/image/downloads.jpg" alt="member1">
+                  <h1>John Deo</h1>
+                  <a href="#"><i class="ri-facebook-fill"></i></a>
+                  <a href="#"><i class="ri-twitter-fill"></i></a>
+                  <a href="#"><i class="ri-linkedin-fill"></i></a>
+
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="description">
+                  <i class="fa fa-quote-left"></i>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis adipisci totam non sequi itaque optio, odit assumenda ab quia dolore atque expedita dolor</p>
+                </div>
+                <div class="profile">
+                  <img src="/assets/image/download (1).jpg" alt="member1">
+                  <h1>Alexander</h1>
+                  <a href="#"><i class="ri-facebook-fill"></i></a>
+                  <a href="#"><i class="ri-twitter-fill"></i></a>
+                  <a href="#"><i class="ri-linkedin-fill"></i></a>
+                </div>
+                </div>
+              </div>
+                
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="description">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis adipisci totam non sequi itaque optio, odit assumenda ab quia dolore atque expedita dolor</p>
+                      </div>
+                      <div class="profile">
+                        <img src="/assets/image/download (7).jpg" alt="member1">
+                        <h1>Emma</h1>
+                        <a href="#"><i class="ri-facebook-fill"></i></a>
+                        <a href="#"><i class="ri-twitter-fill"></i></a>
+                        <a href="#"><i class="ri-linkedin-fill"></i></a>
+                       </div>
+                   </div>
+                </div>
+               
+                
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <div class="description">
+                          <i class="fa fa-quote-left"></i>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis adipisci totam non sequi itaque optio, odit assumenda ab quia dolore atque expedita dolor</p>
+                        </div>
+                        <div class="profile">
+                          <img src="/assets/image/download (2).jpg" alt="member1">
+                          <h1>James</h1>
+                           <a href="#"><i class="ri-facebook-fill"></i></a>
+                           <a href="#"><i class="ri-twitter-fill"></i></a>
+                           <a href="#"><i class="ri-linkedin-fill"></i></a>
+                         </div>
+                     </div>
+                  </div>
+                  
+           
+               
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <div class="description">
+                          <i class="fa fa-quote-left"></i>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis adipisci totam non sequi itaque optio, odit assumenda ab quia dolore atque expedita dolor</p>
+                        </div>
+                        <div class="profile">
+                          <img src="/assets/image/download8.jpg" alt="member1">
+                          <h1>Mariya</h1>
+                           <a href="#"><i class="ri-facebook-fill"></i></a>
+                           <a href="#"><i class="ri-twitter-fill"></i></a>
+                           <a href="#"><i class="ri-linkedin-fill"></i></a>
+                         </div>
+                     </div>
+                  </div>
+                  
+           
+             
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="description">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis adipisci totam non sequi itaque optio, odit assumenda ab quia dolore atque expedita dolor</p>
+                      </div>
+                      <div class="profile">
+                        <img src="/assets/image/download (3).jpg" alt="member1">
+                        <h1>Daniel</h1>
+                        <a href="#"><i class="ri-facebook-fill"></i></a>
+                        <a href="#"><i class="ri-twitter-fill"></i></a>
+                        <a href="#"><i class="ri-linkedin-fill"></i></a>
+                       </div>
+                   </div>
+                </div>
+                
+              
+               
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="description">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis adipisci totam non sequi itaque optio, odit assumenda ab quia dolore atque expedita dolor</p>
+                      </div>
+                      <div class="profile">
+                        <img src="/assets/image/download5.jpg" alt="member1">
+                        <h1>Amelia</h1>
+                        <a href="#"><i class="ri-facebook-fill"></i></a>
+                        <a href="#"><i class="ri-twitter-fill"></i></a>
+                        <a href="#"><i class="ri-linkedin-fill"></i></a>
+                       </div>
+                   </div>
+                </div>
+              
+             
+            
+          <div class="swiper-pagination"></div>
+       </div>
+
+      </div>
   
-  </section>
+   </section>
+
   <footer class="footer section">
     <div class="container footer_container">
       <div class="footer_data grid">
         <div class="logo-info footer-box">
           <a href="#" class="nav_logo" >
             <i class="ri- roadster-line"></i>
-              DopeCars
+            <h3>  WebCars</h3>
             </a>
           <p class="footer_desc">
             We are everywhere around you, but our
@@ -825,7 +988,7 @@
           <li><a href="#">Support</a></li>
          </ul>
        </div>
-       <div class="company footer_box">
+       <div class="company footer-box">
          <h3  class="footer_title">Company</h3>
            <ul>
             <li><a href="#">About Us</a></li>
@@ -834,8 +997,8 @@
             <li><a href="#">Drop Media</a></li>
            </ul>
        </div>
-       <div class="Social footer_box">
-        <h3  class="footer_title">Follow on us</h3>
+       <div class="Social footer-box">
+        <h3 >Follow on us</h3>
           <ul>
            <li><a href="https://www.linkedin.com/in/kaur-rajbeer-7a539811a/" class="footer-title"><i class="ri-linkedin-fill"></i></a></li>
            <li><a href="https://www.facebook.com/rajbeer.kaur.330/" class="footer-title"><i class="ri-facebook-fill"></i></a></li>

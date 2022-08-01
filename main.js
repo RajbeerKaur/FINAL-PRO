@@ -3,6 +3,7 @@ const navMenu = document.getElementById("nav-menu");
 const navClose = document.getElementById("nav-close");
 const navToggle = document.getElementById("nav-toggle");
 
+
 navToggle.addEventListener("click" ,() => {
    navMenu.classList.add("show-menu");
 });
@@ -10,6 +11,8 @@ navToggle.addEventListener("click" ,() => {
 navClose.addEventListener("click" ,() => {
     navMenu.classList.remove("show-menu");
  });
+
+
  
  //Change the background on  scroll//
  
@@ -123,3 +126,29 @@ sr.reveal(".footer_box", {interval:100});
 
 sr.reveal(".box-container");
 sr.reveal(".box", {delay:500,origin:"right"});
+
+sr.reveal(".content");
+sr.reveal(".content-carrousel", {delay:600,origin:"left"});
+// Initialize Swiper -->
+  
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        autoplay:{
+         delay: 2500,
+         disableOnInteraction : false,
+        }
+      });
+   
